@@ -1,6 +1,6 @@
 # BAC-TESTER
 
-A Burp Suite extension for automated **Broken Access Control (BAC)** testing. It intercepts HTTP requests from the Proxy, replays them with a victim's session headers, and classifies each response as **Vulnerable**, **Secure**, or **Suspicious**.
+A Burp Suite extension for automated **Broken Access Control (BAC)** testing. It intercepts HTTP requests from the Proxy, replays them with a attacker's session headers, and classifies each response as **Vulnerable**, **Secure**, or **Suspicious**.
 
 ---
 
@@ -10,7 +10,6 @@ A Burp Suite extension for automated **Broken Access Control (BAC)** testing. It
 - Classifies responses into three verdict buckets: Vulnerable, Secure, Suspicious
 - Dark-themed UI with real-time counters and tab badges
 - Right-click → **Send to Repeater** for any logged request
-- Audible beep alert on vulnerability detection
 - Skips static assets (`.js`, `.css`, `.png`, etc.) automatically
 
 ---
@@ -43,8 +42,8 @@ A Burp Suite extension for automated **Broken Access Control (BAC)** testing. It
    Authorization: Bearer eyJhbGci...
    ```
 3. Click **Save**, then **Enable**.
-4. Browse the application as a **privileged user** (attacker) through Burp Proxy.
-5. BAC-TESTER replays each request with the victim's session and flags any access control bypass.
+4. Browse the application as a **high privileged user/victim** through Burp Proxy.
+5. BAC-TESTER replays each request with the attacker's session and flags any access control bypass.
 
 ---
 
@@ -58,9 +57,7 @@ A Burp Suite extension for automated **Broken Access Control (BAC)** testing. It
 
 ---
 
-## Screenshots
 
-> _Add screenshots of the Vulnerable, Secure, and Config tabs here._
 
 ---
 
